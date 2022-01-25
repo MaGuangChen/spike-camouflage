@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+X-Requested-By: Shubhendu Madhukar
+Content-Type: application/json
+Response-Delay: 2000
+
+{
+    "greeting": "Hello World",
+    "phone": {{randomValue length=10 type='NUMERIC'}},
+    "dateOfBirth": "{{now format='MM/DD/YYYY'}}",
+    "test": "{{randomValue}}"
+}
+
+Response-Delay: {{num_between lower=5000 upper=7000}}

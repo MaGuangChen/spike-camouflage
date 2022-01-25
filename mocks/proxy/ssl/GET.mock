@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+
+{{#proxy}}
+{
+    "target": "http://localhost:8080/hello-world",
+    "ssl": {
+        "key": "valid-ssl-key.pem",
+        "cert": "valid-ssl-cert.pem"
+    },
+    "secure": false
+}
+{{/proxy}}

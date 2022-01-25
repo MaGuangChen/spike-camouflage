@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+X-Custom-Header: Custom-Value
+Content-Type: application/json
+
+{
+    "message": "Create user {{capture from='query' key='firstName'}} {{capture from='query' key='lastName'}} succeed", 
+    "UUID" : "{{randomValue type='UUID'}}",
+    "createdAt": "{{now format='MM/DD/YYYY'}}"
+}
